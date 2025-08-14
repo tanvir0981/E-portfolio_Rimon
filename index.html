@@ -58,35 +58,34 @@
     </div>
   </header>
 
-  <!-- HERO SECTION (UPDATED: text + centered button on mobile) -->
+  <!-- HERO SECTION (UPDATED: paragraph + button centered on all devices) -->
   <section class="bg-gray-900 text-white">
     <div class="container mx-auto px-6 py-20 md:grid md:grid-cols-2 md:gap-8 items-center">
-      <!-- 1) Heading (first on mobile) -->
+      <!-- 1) Heading (first in DOM) -->
       <div class="reveal" data-reveal>
         <h1 class="text-5xl md:text-6xl font-display font-bold leading-tight shimmer-text">
           Visionary Entrepreneur & Industry Leader
         </h1>
       </div>
 
-      <!-- 2) Image (second on mobile; right column on md+ and spans rows) -->
+      <!-- 2) Image (second in DOM; right column on md+ and spans rows) -->
       <div class="mt-8 md:mt-0 flex justify-center md:row-span-2 md:col-start-2 reveal" data-reveal>
         <img src="images/executive-portrait.jpg"
              alt="Professional portrait of Md. Akhtarul Islam Rimon"
              class="portrait w-full max-w-[500px] h-auto rounded-lg shadow-2xl object-cover">
       </div>
 
-      <!-- 3) Description + CTA (third on mobile; left column below heading on md+) -->
+      <!-- 3) Description + CTA (centered together on all devices) -->
       <div class="mt-8 md:mt-0 reveal" data-reveal>
-        <!-- wrapper limits width and centers content on small screens -->
-        <div class="max-w-lg mx-auto text-center md:mx-0 md:text-left">
+        <!-- wrapper centers content always (mobile + desktop) -->
+        <div class="max-w-lg mx-auto text-center">
           <p class="text-xl text-gray-300">
             Building empires, fostering innovation, and shaping the future of Ayan International.
           </p>
 
-          <!-- center on mobile (mx-auto) but keep left on md+ (md:mx-0) -->
           <div class="mt-8">
             <a href="#contact"
-               class="inline-block cta cta-pulse mx-auto md:mx-0"
+               class="inline-block cta cta-pulse mx-auto"
                role="button">Make an Inquiry</a>
           </div>
         </div>
