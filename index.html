@@ -58,9 +58,7 @@
     </div>
   </header>
 
-  <!-- HERO SECTION (UPDATED) -->
-  <!-- Responsive: on mobile the DOM order is heading -> image -> description+CTA
-       On md+ this becomes a 2-col layout: left column heading+desc, right column image (row-span to align) -->
+  <!-- HERO SECTION (UPDATED: text + centered button on mobile) -->
   <section class="bg-gray-900 text-white">
     <div class="container mx-auto px-6 py-20 md:grid md:grid-cols-2 md:gap-8 items-center">
       <!-- 1) Heading (first on mobile) -->
@@ -79,11 +77,21 @@
 
       <!-- 3) Description + CTA (third on mobile; left column below heading on md+) -->
       <div class="mt-8 md:mt-0 reveal" data-reveal>
-        <p class="text-xl text-gray-300 max-w-lg">
-          Building empires, fostering innovation, and shaping the future of Ayan International.
-        </p>
-        <a href="#contact" class="mt-8 inline-block cta cta-pulse" role="button">Make an Inquiry</a>
+        <!-- wrapper limits width and centers content on small screens -->
+        <div class="max-w-lg mx-auto text-center md:mx-0 md:text-left">
+          <p class="text-xl text-gray-300">
+            Building empires, fostering innovation, and shaping the future of Ayan International.
+          </p>
+
+          <!-- center on mobile (mx-auto) but keep left on md+ (md:mx-0) -->
+          <div class="mt-8">
+            <a href="#contact"
+               class="inline-block cta cta-pulse mx-auto md:mx-0"
+               role="button">Make an Inquiry</a>
+          </div>
+        </div>
       </div>
+    </div>
   </section>
   <!-- END HERO SECTION -->
 
@@ -122,13 +130,13 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
         <div class="bg-white p-8 rounded-lg shadow-xl reveal" data-reveal>
           <div class="text-d4af37 mb-4 text-4xl text-[color:var(--accent)]"><i class="fas fa-rupee-sign"></i></div>
-          <div class="stat-number" id="stat-1" data-target="50">50 Cr+g</div>
+          <div class="stat-number" id="stat-1" data-target="50">0</div>
           <p class="text-gray-600 mt-2">Crore Annual Sales Turnover</p>
         </div>
 
         <div class="bg-white p-8 rounded-lg shadow-xl reveal" data-reveal>
           <div class="text-d4af37 mb-4 text-4xl text-[color:var(--accent)]"><i class="fas fa-users"></i></div>
-          <div class="stat-number" id="stat-2" data-target="20">20+</div>
+          <div class="stat-number" id="stat-2" data-target="20">0</div>
           <p class="text-gray-600 mt-2">Dedicated Employees</p>
         </div>
 
