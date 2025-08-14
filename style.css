@@ -15,6 +15,11 @@ h1, h2, h3, .font-display {
     font-family: 'Playfair Display', serif;
 }
 
+/* New font for the client's name */
+.font-name {
+    font-family: 'Cormorant Garamond', serif;
+}
+
 .nav-link {
     transition: color 0.3s;
     position: relative;
@@ -46,4 +51,23 @@ h1, h2, h3, .font-display {
 .gallery-item:hover img {
     transform: scale(1.05);
     filter: brightness(1.1);
+}
+
+/* New creative shimmer effect for the heading */
+.shimmer-text {
+    background: linear-gradient(90deg, #d4af37, #ffffff, #d4af37, #ffffff, #d4af37);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 8s linear infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 150% 0;
+    }
+    100% {
+        background-position: -150% 0;
+    }
 }
