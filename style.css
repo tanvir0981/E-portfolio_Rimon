@@ -1,0 +1,49 @@
+/*
+  style.css
+  This file contains the custom styles for the Executive E-Portfolio.
+  It is linked from the main HTML file.
+  Note: Most of the styling is handled by the Tailwind CSS framework, 
+  which is included via a CDN in the HTML file. This file contains only the custom additions.
+*/
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, .font-display {
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-link {
+    transition: color 0.3s;
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #d4af37; /* Gold color */
+    transition: width 0.3s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.timeline-item {
+    border-left: 3px solid #d4af37;
+}
+
+.gallery-item img {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
